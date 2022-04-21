@@ -1,0 +1,24 @@
+\begin{thebibliography}{1}
+
+\bibitem{bworld1}
+D.Edwards.
+\newblock {Numerical and Analytic Methods in Option Pricing}.
+\newblock
+  \url{https://www.overleaf.com/articles/numerical-and-analytic-methods-in-option-pricing/rwpzvzwksgrc},
+  2015.
+
+\bibitem{bworld}
+John.
+\newblock {Calculating the Volatility Smile}.
+\newblock
+  \url{https://www.codearmo.com/python-tutorial/calculating-volatility-smile},
+  2021.
+
+\bibitem{seth_2022}
+Shobhit Seth.
+\newblock Circumventing the limitations of black-scholes.
+\newblock
+  \url{https://www.investopedia.com/articles/active-trading/041015/how-circumvent-limitations-blackscholes-model.asp#:~:text=Limitations%20of%20the%20Black%2DScholes%20Model,-There%20are%20limitations&amp;text=Assumes%20constant%20values%20for%20the,liquidity%20risk%20and%20brokerage%20charges.},
+  Mar 2022.
+
+\end{thebibliography}

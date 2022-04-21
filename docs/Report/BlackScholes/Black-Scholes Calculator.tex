@@ -10,7 +10,7 @@
 
 % Use times if you have the font installed; otherwise, comment out the
 % following line.
-
+\usepackage{url}
 \usepackage{times}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
@@ -23,6 +23,7 @@
 %\usepackage[margin=0.5in]{geometry}
 \usepackage[nottoc,numbib]{tocbibind}
 \usepackage[a4paper,left=2cm,right=2cm, bottom=1cm]{geometry}
+
 
 % The preamble here sets up a lot of new/revised commands and
 % environments.  It's annoying, but please do *not* try to strip these
@@ -72,7 +73,7 @@
 
 % Include your paper's title here
 
-\title{The {\it Black-Scholes\/} Calculator} 
+\title{Senior Year Project} 
 
 
 % Place the author information here.  Please hand-code the contact
@@ -82,7 +83,10 @@
 % settings shown here.
 
 \author
-{Muhammad Affan\\
+{\\
+	Project Supervisor: Dr. Zahra Lakdawala
+	\\
+	Author: Muhammad Affan
 	\\
 	\normalsize{$^{1}$Department of Mathematics, Lahore University of Management and Sciences}
 	\\
@@ -259,7 +263,7 @@ These are well known approximation to us, for the single variable case. We know 
 	f'(x) = \frac{1}{\Delta x}(f(x + \Delta x) -f(x)), \\
 	f'(x) = \frac{1}{\Delta x}(f(x) -f(x-\Delta x)).
 \end{align*}
-
+\cite{bworld1}
 \subsection{Terminal and Boundary Condition}
 
 
@@ -277,7 +281,7 @@ Say that we truncate the plane so that $S \in [S_{\min}, S_{\max}]$, we still co
 	\caption{\label{tab:bc'st} The conditions at each boundary of the gird for a European option }
 \end{table}
 These boundary and side conditions are found by using the payoff function at the necessary points. The points of interest are at the termination date and the sides as this is where we have truncated our plane to, hence we arrive at the above. 
-
+\cite{bworld1}
 \subsection{Implicit-Method}
 
 When approximating the Black-Scholes differential equation we use a backwards difference approximation for the $\frac{\partial f}{\partial S}$ derivative, a forward difference approximation for the  $\frac{\partial f}{\partial t}$ and a central difference approximation for the $\frac{\partial^2 f}{\partial S^2}$ derivative. Hence, the Black-Scholes equation becomes, 
@@ -351,7 +355,7 @@ Allowing $A$ to be the leftmost matrix and $F_i$ to be the leftmost vector so th
 \end{align}
 In the matrix form above we have taken $i=N-1$ however we note that this is true for arbitrary $i$.
 We may solve these using the tridiagonal matrix algorithm for $N-1$, then the $F_{N-1}$ we have found is used in (\ref{MF}) with $i=N-2$ to find $F_{N-2}$. We may continue doing this until we reach $i=0$ and we may find the value of our option at this point.
-
+\cite{bworld1}
 
 \subsection{Results}
  After solving the Black-Scholes equation by analytical and numerical schemes we obtain the following results which tells us that both are approximately the same. One can always change other parameters like volatility, risk-free rate, Time of maturity e.t.c to observe the changes in the solution curve.
@@ -371,20 +375,34 @@ The same parameters were used for analytical method and the following results we
 
  The results are quite close but the parameters used were hypothetical. So in order to get a better sense of the results introducing some non-linearity in the parameters like volatility will help us identify the stability of these methods.
  
+  \subsection{Limitations of the Black-Scholes Model}
+  There are limitations on the Black-Scholes model, which is one of the most popular models for options pricing. Some of the standard limitations of the Black-Scholes model are:
+ \begin{itemize}
+  \item Assumes constant values for the risk-free rate of return and volatility over the option duration. None of those will necessarily remain constant in the real world.
+  
+  \item Assumes continuous and costless trading—ignoring the impact of liquidity risk and brokerage charges.
+  
+  \item Assumes stock prices to follow a lognormal pattern, e.g., a random walk (or geometric Brownian motion pattern), thus ignoring large price swings that are observed more frequently in the real world.
+  
+  \item Assumes no dividend payout—ignoring its impact on the change in valuations.
+  
+  \item Assumes no early exercise (e.g., fits only European options). That makes the model unsuitable for American options.
+  \cite{seth_2022}
+  \end{itemize}
   
 \section{Introducing non-linearity in volatility}
 
  \subsection{Implied Volatility}
  Volatility is a major factor in the price of an option. When thinking of volatility it is useful to think of it as the range of potential future stock prices.Implied volatility is an estimate of the future variability for the asset underlying the options contract. The Black-Scholes model is used to price options. The model assumes the price of the underlying asset follows a geometric Brownian motion with constant drift and volatility.
  
- As with any equation, Black-Scholes can be used to determine any single variable when all the other variables are known.To calculate Implied Volatility i took Options data of NFLX(Netflix) to get a varying volatility. We can look at calculating implied volatility as a minimize problem. Below we minimize the absolute difference between the market price and the Black-Scholes price.We have bounded this minimization such that the volatility is less than 600 \%.
+ As with any equation, Black-Scholes can be used to determine any single variable when all the other variables are known.To calculate implied volatility i took options data of NFLX(Netflix) to get a varying volatility. We can look at calculating implied-volatility as a minimization problem. Below we minimize the absolute difference between the market price and the Black-Scholes price.We have bounded this minimization such that the volatility is less than 600 \%.
  
  
 \begin{align}
 	implied volatility=argmin_{\sigma \in(0,6]} |Vmarket  - VBS(S,K,T,r,\sigma)|
 \end{align}
 
-Now lets calculate the implied volatility for NFLX. The below mentioned image shows the implied volatility from the real data and implied volatility calculated using Newton-Raphson method.
+Now lets calculate the implied volatility for NFLX. The below mentioned image shows the implied-volatility from the real data and implied-volatility calculated using Newton-Raphson method. \cite{bworld}
 
 \includegraphics[width=12cm]{p6}
 
@@ -396,9 +414,9 @@ We can see that our call-option is decaying over the time but there is non-linea
 
 
 
+\bibliographystyle{plain}
+\bibliography{Bib}	
 
-	
-	
 
 	
 	
