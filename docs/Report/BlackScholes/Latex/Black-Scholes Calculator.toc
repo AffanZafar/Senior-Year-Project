@@ -11,4 +11,9 @@
 \contentsline {subsection}{\numberline {2.6}Limitations of the Black-Scholes Model}{12}{}%
 \contentsline {section}{\numberline {3}Introducing non-linearity in volatility}{12}{}%
 \contentsline {subsection}{\numberline {3.1}Implied Volatility}{12}{}%
-\contentsline {section}{\numberline {4}Bibliography}{14}{}%
+\contentsline {section}{\numberline {4}Trading Strategies}{14}{}%
+\contentsline {subsection}{\numberline {4.1}Introduction}{14}{}%
+\contentsline {subsection}{\numberline {4.2}Straddle Strategy}{14}{}%
+\contentsline {subsection}{\numberline {4.3}Custom Strategy}{16}{}%
+\contentsline {section}{\numberline {5}Conclusion}{17}{}%
+\contentsline {section}{\numberline {6}Bibliography}{17}{}%

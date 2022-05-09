@@ -412,6 +412,44 @@ There is a significant difference at the start but the calculated Implied Volati
 
 We can see that our call-option is decaying over the time but there is non-linearity is the decaying of the option. So we have obtained non-linear profiles for our Black-Scholes model.
 
+	\section{Trading Strategies}
+	\subsection{Introduction}
+	After having a basic understanding of how the option pricing works we can use this limited knowledge to learn about the trading strategies used by the retail traders.
+	A trading strategy is a set of rules that a trader follow to profit from the markets while keeping the risk to a minimum. It's not necessary that the strategies discussed here will work in the real market conditions because most of the strategies that are written in literature don't work because if they did everyone would have made a fortune in the stock market. Below are some of the famous used strategies in the financial markets.
+	
+	\subsection{Straddle Strategy}
+	A straddle is a strategy in which a trader buys both a call option and a put option at the same strike price. The idea here is that the trader will benefit from a large move in the price of the underlying stock regardless of the direction of the move. This is an especially useful strategy when a trader predicts a large increase in the uncertainty of an asset price, and the likelihood of a large move, but he is unsure about the direction of the move.
+	
+	We will now use this information on a real life stock. At the time of writing this article there is an option available for Netflix trading at a strike price of 175. Lets see how our strategy works on the Netflix options. \cite{bwordl3}
+	
+	\includegraphics[width=12cm]{straddle}
+	
+	If there is a huge market move to be expected in Netflix stock the payoff for our options would look like this. And if there is no significant movement in the market we will only lose the premium we paid for our options. So the profit is unlimited as long as the market keeps going up. So this strategy works when there is huge volatility expected in the markets. Similarly we can implement a short straddle as well which is the opposite of we did here.
+	
+	\subsection{Custom Strategy}
+	In straddle we used a combination of call and put options to benefit from an expected market move. However we can use different combinations of call and put options to see what payoff we will get in the market. Building a custom strategy requires an in depth knowledge of option pricing models. Here we will use our limited knowledge to see what we can achieve in the market. We will again use the Netflix stock and use a combination of options to reduce our risk.
+	
+	\includegraphics[width=12cm]{Custom}
+	
+	So we made a decent strategy with a very low risk using a combination of call and put options. One can always experiment different strategies on different stocks to see what payoff they will get. 
+	
+	So the parameter for call and put options are as follow
+	
+	longcall (Strikeprice,Cost, Number of options)
+	
+	longput (strikeprice, Premium,Number of options)
+	
+	This will help understand the inputs in the code snippet added above.
+	
+	\section{Conclusion}
+	
+	Working on these concepts was a challenging task. This project gave me mathematical understanding of Quantitative Finance. Although most of the techniques discussed were outdated but they help in understanding the basic option pricing theory. This project covers basics of Black Scholes model, numerical technique to solve BS model, comparison between numerical and analytical solutions of Black-Scholes, an overview of implied volatility along with limitations of Black-Scholes and an overview of trading strategies along-with a custom trading strategy for Netflix.
+	
+	
+	
+		
+	
+
 
 
 \bibliographystyle{plain}
