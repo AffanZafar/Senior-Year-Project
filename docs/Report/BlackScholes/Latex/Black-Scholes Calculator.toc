@@ -1,19 +1,23 @@
-\contentsline {section}{\numberline {1}The Black-Scholes Model}{3}{}%
-\contentsline {subsection}{\numberline {1.1}The Black-Scholes Assumptions}{4}{}%
-\contentsline {subsection}{\numberline {1.2}Example}{4}{}%
-\contentsline {subsection}{\numberline {1.3}Greeks}{6}{}%
-\contentsline {section}{\numberline {2}Black-Scholes Option Calculator}{6}{}%
-\contentsline {subsection}{\numberline {2.1}Finite Difference Method}{7}{}%
-\contentsline {subsection}{\numberline {2.2}Terminal and Boundary Condition}{7}{}%
-\contentsline {subsection}{\numberline {2.3}Implicit-Method}{8}{}%
-\contentsline {subsection}{\numberline {2.4}Results}{10}{}%
-\contentsline {subsection}{\numberline {2.5}Benchmarks}{10}{}%
-\contentsline {subsection}{\numberline {2.6}Limitations of the Black-Scholes Model}{12}{}%
-\contentsline {section}{\numberline {3}Introducing non-linearity in volatility}{12}{}%
-\contentsline {subsection}{\numberline {3.1}Implied Volatility}{12}{}%
-\contentsline {section}{\numberline {4}Trading Strategies}{14}{}%
-\contentsline {subsection}{\numberline {4.1}Introduction}{14}{}%
-\contentsline {subsection}{\numberline {4.2}Straddle Strategy}{14}{}%
-\contentsline {subsection}{\numberline {4.3}Custom Strategy}{16}{}%
-\contentsline {section}{\numberline {5}Conclusion}{17}{}%
-\contentsline {section}{\numberline {6}Bibliography}{17}{}%
+\contentsline {section}{\numberline {1}The Black-Scholes Model}{4}{}%
+\contentsline {subsection}{\numberline {1.1}The Black-Scholes Assumptions}{5}{}%
+\contentsline {subsection}{\numberline {1.2}Example}{5}{}%
+\contentsline {subsection}{\numberline {1.3}Greeks}{7}{}%
+\contentsline {section}{\numberline {2}Numerical Solution of Black-Scholes model}{7}{}%
+\contentsline {subsection}{\numberline {2.1}Finite Difference Method}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Terminal and Boundary Condition}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Implicit-Method}{9}{}%
+\contentsline {subsection}{\numberline {2.4}Results}{11}{}%
+\contentsline {subsection}{\numberline {2.5}Benchmarks}{11}{}%
+\contentsline {subsection}{\numberline {2.6}Limitations of the Black-Scholes Model}{13}{}%
+\contentsline {subsection}{\numberline {2.7}Heston Model}{13}{}%
+\contentsline {subsection}{\numberline {2.8}Comparison of Heston and Black-Schole model}{14}{}%
+\contentsline {section}{\numberline {3}Understanding Volatility Smile}{15}{}%
+\contentsline {subsection}{\numberline {3.1}Implied Volatility}{15}{}%
+\contentsline {subsection}{\numberline {3.2}Interpretation of volatility smile}{16}{}%
+\contentsline {subsection}{\numberline {3.3}Limitations of volatility smile}{17}{}%
+\contentsline {section}{\numberline {4}Trading Strategies}{17}{}%
+\contentsline {subsection}{\numberline {4.1}Introduction}{17}{}%
+\contentsline {subsection}{\numberline {4.2}Straddle Strategy}{18}{}%
+\contentsline {subsection}{\numberline {4.3}Custom Strategy}{19}{}%
+\contentsline {section}{\numberline {5}Conclusion}{20}{}%
+\contentsline {section}{\numberline {6}Bibliography}{21}{}%

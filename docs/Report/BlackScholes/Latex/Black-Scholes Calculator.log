@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.18)  10 MAY 2022 03:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.7) (preloaded format=pdflatex 2021.7.18)  19 MAY 2022 00:29
 entering extended mode
 **"./Black-Scholes Calculator.tex"
 (Black-Scholes Calculator.tex
@@ -789,19 +789,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
  [1
 
 {C:/Users/affan/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(Black-Scholes Calculator.toc)
+(Black-Scholes Calculator.toc [2])
 \tf@toc=\write4
 \openout4 = `"Black-Scholes Calculator.toc"'.
 
- [2] [3]
+ [3] [4]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 09.
 
 (C:\Users\affan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-[4]
-<P2.jpg, id=25, 648.021pt x 384.83775pt>
+[5]
+<P2.jpg, id=28, 648.021pt x 384.83775pt>
 File: P2.jpg Graphic file (type jpg)
 <use P2.jpg>
 Package pdftex.def Info: P2.jpg  used on input line 228.
@@ -811,64 +811,85 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 228--229
 [][] 
  []
 
-[5 <./P2.jpg>]
-
-LaTeX Warning: Reference `eq:2' on page 6 undefined on input line 239.
-
-
+[6 <./P2.jpg>]
 Overfull \hbox (10.12239pt too wide) in paragraph at lines 239--240
 \OT1/ptm/m/n/12 the an-a-lyt-i-cal and nu-mer-i-cal so-lu-tion of the Black-Sch
 oles equa-tion.Analytical so-lu-tion is straight-
  []
 
-[6] [7] [8] [9]
-<P1.jpg, id=44, 596.2275pt x 336.65775pt>
+[7] [8] [9] [10]
+<P1.jpg, id=47, 596.2275pt x 336.65775pt>
 File: P1.jpg Graphic file (type jpg)
 <use P1.jpg>
 Package pdftex.def Info: P1.jpg  used on input line 364.
 (pdftex.def)             Requested size: 398.33858pt x 224.92252pt.
-<p3.jpg, id=45, 363.15675pt x 314.3745pt>
+<p3.jpg, id=48, 363.15675pt x 314.3745pt>
 File: p3.jpg Graphic file (type jpg)
 <use p3.jpg>
 Package pdftex.def Info: p3.jpg  used on input line 370.
 (pdftex.def)             Requested size: 284.52756pt x 246.324pt.
- [10 <./P1.jpg>]
-<p4.jpg, id=49, 387.849pt x 316.18124pt>
+ [11 <./P1.jpg>]
+<p4.jpg, id=52, 387.849pt x 316.18124pt>
 File: p4.jpg Graphic file (type jpg)
 <use p4.jpg>
 Package pdftex.def Info: p4.jpg  used on input line 374.
 (pdftex.def)             Requested size: 284.52756pt x 231.9538pt.
- [11 <./p3.jpg> <./p4.jpg>]
-Overfull \hbox (4.20734pt too wide) in paragraph at lines 398--399
+ [12 <./p3.jpg> <./p4.jpg>] [13]
+
+! Package inputenc Error: Unicode character ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.421 ...otion of the asset’s price variance.​
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+<p9.jpg, id=60, 455.301pt x 89.133pt>
+File: p9.jpg Graphic file (type jpg)
+<use p9.jpg>
+Package pdftex.def Info: p9.jpg  used on input line 432.
+(pdftex.def)             Requested size: 284.52756pt x 55.70253pt.
+[14]
+<p10.jpg, id=64, 451.6875pt x 164.41425pt>
+File: p10.jpg Graphic file (type jpg)
+<use p10.jpg>
+Package pdftex.def Info: p10.jpg  used on input line 435.
+(pdftex.def)             Requested size: 284.52756pt x 103.57399pt.
+
+Overfull \hbox (4.20734pt too wide) in paragraph at lines 446--447
 \OT1/ptm/m/n/12 the other vari-ables are known.To cal-cu-late im-plied volatil-
 ity i took op-tions data of NFLX(Netflix)
  []
 
-[12]
-<p6.jpg, id=56, 330.033pt x 214.401pt>
+[15 <./p9.jpg> <./p10.jpg>]
+<p6.jpg, id=68, 369.7815pt x 213.79875pt>
 File: p6.jpg Graphic file (type jpg)
 <use p6.jpg>
-Package pdftex.def Info: p6.jpg  used on input line 407.
-(pdftex.def)             Requested size: 341.43306pt x 221.80711pt.
-<p7.jpg, id=57, 348.1005pt x 213.1965pt>
-File: p7.jpg Graphic file (type jpg)
-<use p7.jpg>
-Package pdftex.def Info: p7.jpg  used on input line 411.
-(pdftex.def)             Requested size: 341.43306pt x 209.11331pt.
- [13 <./p6.jpg>] [14 <./p7.jpg>]
-<straddle.jpg, id=65, 333.04425pt x 275.8305pt>
+Package pdftex.def Info: p6.jpg  used on input line 455.
+(pdftex.def)             Requested size: 341.43306pt x 197.42145pt.
+ [16 <./p6.jpg>]
+<vol.jpg, id=72, 448.67625pt x 285.4665pt>
+File: vol.jpg Graphic file (type jpg)
+<use vol.jpg>
+Package pdftex.def Info: vol.jpg  used on input line 467.
+(pdftex.def)             Requested size: 284.52756pt x 181.03398pt.
+ [17 <./vol.jpg>]
+<straddle.jpg, id=76, 333.04425pt x 275.8305pt>
 File: straddle.jpg Graphic file (type jpg)
 <use straddle.jpg>
-Package pdftex.def Info: straddle.jpg  used on input line 425.
+Package pdftex.def Info: straddle.jpg  used on input line 484.
 (pdftex.def)             Requested size: 341.43306pt x 282.787pt.
- [15 <./straddle.jpg>]
-<Custom.jpg, id=69, 357.7365pt x 318.59026pt>
+ [18]
+<Custom.jpg, id=80, 357.7365pt x 318.59026pt>
 File: Custom.jpg Graphic file (type jpg)
 <use Custom.jpg>
-Package pdftex.def Info: Custom.jpg  used on input line 432.
+Package pdftex.def Info: Custom.jpg  used on input line 491.
 (pdftex.def)             Requested size: 341.43306pt x 304.08337pt.
- [16 <./Custom.jpg>]
-(Black-Scholes Calculator.bbl
+ [19 <./straddle.jpg>] [20 <./Custom.jpg>] (Black-Scholes Calculator.bbl
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 7
 .
 
@@ -891,86 +912,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
 []\OT1/ptm/m/n/12 John.  Strad-dles, But-ter-flies, Iron Con-dors and More.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--16
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
 \OT1/pcr/m/n/12 https : / / www . codearmo . com / python-[]tutorial /
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 18--23
+Underfull \hbox (badness 6094) in paragraph at lines 23--28
 []\OT1/ptm/m/n/12 John.  Cal-cu-lat-ing the Volatil-ity Smile.  $\OT1/pcr/m/n/1
 2 https : / / www . codearmo . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 3078) in paragraph at lines 30--33
+[]\OT1/ptm/m/n/12 CORY MITCHELL.  Volatil-ity Smile Def-i-ni-tion and Uses.  $\
+OT1/pcr/m/n/12 https : / / www .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 []\OT1/ptm/m/n/12 Shobhit Seth.  Cir-cum-vent-ing the lim-i-ta-tions of black-s
 choles.  $\OT1/pcr/m/n/12 https :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 \OT1/pcr/m/n/12 / / www . investopedia . com / articles / active-[]trading / 04
 1015 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 \OT1/pcr/m/n/12 how-[]circumvent-[]limitations-[]blackscholes-[]model . asp# : 
 [] : text =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 \OT1/pcr/m/n/12 Limitations % 20of % 20the % 20Black % 2DScholes % 20Model ,[] 
 -[]There %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 \OT1/pcr/m/n/12 20are % 20limitations & amp ; text = Assumes % 20constant % 20v
 alues %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--30
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 \OT1/pcr/m/n/12 20for % 20the ,[] liquidity % 20risk % 20and % 20brokerage % 20
 charges.$\OT1/ptm/m/n/12 ,
  []
 
-[17]) [18] (Black-Scholes Calculator.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[21]) [22] (Black-Scholes Calculator.aux) ) 
 Here is how much of TeX's memory you used:
- 17459 strings out of 478870
- 331098 string characters out of 2848836
- 613291 words of memory out of 3000000
- 35011 multiletter control sequences out of 15000+600000
+ 17489 strings out of 478870
+ 331482 string characters out of 2848836
+ 613321 words of memory out of 3000000
+ 35041 multiletter control sequences out of 15000+600000
  442759 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,16n,89p,688b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/affan/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
-/Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr10.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/rsfs/rsfs10.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/affan/AppData/Local/Programs/MiKT
-eX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/affan/AppData/Local/Programs/MiKTe
-X/fonts/type1/urw/symbol/usyr.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/times/utmb8a.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/times/utmr8a.pfb><C:/Users/affan/AppData/Local/Programs/MiKTeX
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "Black-Scholes Calculator.pdf" (18 pages, 437386 bytes).
+ 84i,16n,89p,688b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/affan/AppData/Local/Progra
+ms/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/affan/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/affan/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/affan/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/affan
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/affan/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/
+Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C
+:/Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:
+/Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/
+Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/
+Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/
+Users/affan/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "Black-Scholes Calculator.pdf" (22 pages, 560522 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 

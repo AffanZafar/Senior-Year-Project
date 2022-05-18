@@ -234,9 +234,9 @@ Then value of call-option after 77 days comes out to be \$7.10. The value is ver
 	
 	
 
-\section{Black-Scholes Option Calculator} \label{The Black-Scholes Model}
+\section{Numerical Solution of Black-Scholes model} \label{The Black-Scholes Model}
 
-The main purpose for making Black-Scholes Calculator is to check our analytical solution obtained from Black-Scholes model against the numerical solution obtained after solving Black-Scholes Equation.The implementation of  Black-Scholes Calculator required two things mainly the analytical and numerical solution of the Black-Scholes equation.Analytical solution is straightforward and it can be obtained from the formula given in  \ref{eq:2}. However Obtaining Numerical Solution is not an easy task. A numerical scheme is required which ensures a stable solution for the Black-Scholes equations.
+The main purpose for making Black-Scholes Calculator is to check our analytical solution obtained from Black-Scholes model against the numerical solution obtained after solving Black-Scholes Equation.The implementation of  Black-Scholes Calculator required two things mainly the analytical and numerical solution of the Black-Scholes equation.Analytical solution is straightforward and it can be obtained from the formula given in (2). However Obtaining Numerical Solution is not an easy task. A numerical scheme is required which ensures a stable solution for the Black-Scholes equations.
 
 \begin{equation}
 	\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2} \frac{\partial^{2} \mathrm C}{\partial \mathrm S^2}
@@ -389,8 +389,56 @@ The same parameters were used for analytical method and the following results we
   \item Assumes no early exercise (e.g., fits only European options). That makes the model unsuitable for American options.
   \cite{seth_2022}
   \end{itemize}
+
+\subsection{Heston Model}'
+
+One of the major limitations of Black-Scholes model was that is assumed constant values for the volatility and risk-free rate over the option duration.Heston model solves this problem by incorporating stochastic volatility.The Heston Model is a closed-form solution for pricing options that seeks to overcome some of the shortcomings presented in the Black-Scholes option pricing model.
+
+\begin{align}
+	dS_t &= rS_tdt + \sqrt{V_t} S_t dW_{1t} , \\
+	dV_t &= k(\theta - V_t)dt + \sigma \sqrt{V_t} dW_{2t}.
+\end{align}
+ 
+Where:
+
+$S_t$ = asset price at time t.
+
+$r$   =  risk-free interest rate.
+
+
+$\sqrt{V_t}$ =volatility (standard deviation) of the asset price.
+
+$\sigma$     = volatility of the $\sqrt{V_t}$.
+
+$\theta$=long-term price variance.
+
+$k$=rate of reversion to $\theta$.
+
+$dt$=indefinitely small positive time increment.
+
+$W_{1t}$ = Brownian motion of the asset price.
+
+$W_{2t}$ =Brownian motion of the asset’s price variance.​
+
+
+Both the basic Black-Scholes model and the Heston Model still only provide option pricing estimates for a European option, which is an option that can only be exercised on its expiration date. \cite{bworld5}
+
+\subsection{Comparison of Heston and Black-Schole model}
+
+Till now we have a decent understanding of both models and how they work. To compare these models we will test them by computing an option of APPL stock with expiry of 1 year. The detail of the option are as follow.
+
+Let us consider a European call option for AAPL with a strike price of $130$ maturing on 15th Jan, 2023. Let the spot price be $127.62$. The volatility of the underlying stock is know to be 20\%  and has a dividend yield of 1.63\%. Lets value this option as of 18th May, 2022.
+
+\includegraphics[width=10cm]{p9}
+
+
+\includegraphics[width=10cm]{p10}
+
+There is not a big difference in the pricing done by both models. But heston model is more complex as it requires the recalibration of various parameters like $k$ , $\theta$. So in general Black-scholes model is more easy to use.
+
+
   
-\section{Introducing non-linearity in volatility}
+\section{Understanding Volatility Smile}
 
  \subsection{Implied Volatility}
  Volatility is a major factor in the price of an option. When thinking of volatility it is useful to think of it as the range of potential future stock prices.Implied volatility is an estimate of the future variability for the asset underlying the options contract. The Black-Scholes model is used to price options. The model assumes the price of the underlying asset follows a geometric Brownian motion with constant drift and volatility.
@@ -406,11 +454,22 @@ Now lets calculate the implied volatility for NFLX. The below mentioned image sh
 
 \includegraphics[width=12cm]{p6}
 
-There is a significant difference at the start but the calculated Implied Volatility follows the general trend of original volatility. Our Target was to get a non-linear profile of the volatility and we have now got one. Lets see how to option price look like with this volatility. 
+There is a significant difference at the start but the calculated Implied Volatility follows the general trend of original volatility. Our Target was to get a non-linear profile of the volatility and we have now got one. Now we have obtained a volatility which looks like a smile. Lets see how should one interpret this option smile. 
 
-\includegraphics[width=12cm]{p7}
+ \subsection{Interpretation of volatility smile}
+Volatility smiles can be seen when comparing various options with the same underlying asset and same expiration date but different strike prices. If the implied volatility is plotted for each of the different strike prices, then there may be a U-shape. The U-shape is not always as perfectly formed as depicted in the graph above.
+ 
+If the option has a U-shape, then options that are ITM and OTM by an equal amount should have roughly the same implied volatility. The further ITM or OTM, the greater the implied volatility, with the lowest implied volatilities near the ATM options. If this is not the case, then the option does not align with a volatility smile. The chart below will help you better understand this concept. \cite{bwordl4}
+  
 
-We can see that our call-option is decaying over the time but there is non-linearity is the decaying of the option. So we have obtained non-linear profiles for our Black-Scholes model.
+  
+  
+ 	\includegraphics[width=10cm]{vol}
+ 	
+ 	  \subsection{Limitations of volatility smile}
+ 	  
+ 	  As for every model that we have discussed there are always some limitations to the method that we use. One of the limitation is visible in our implied volatility of NFLX that we calculated. The smile that we obtained is not smooth which results in certain options showing more or less implied volatility as compared to the actual volatility. Its a tool for traders to look for options that have a high or low implied volatility, but this alone cannot help in deciding which options to select. \cite{bwordl4}
+  
 
 	\section{Trading Strategies}
 	\subsection{Introduction}

@@ -7,6 +7,11 @@ D.Edwards.
   \url{https://www.overleaf.com/articles/numerical-and-analytic-methods-in-option-pricing/rwpzvzwksgrc},
   2015.
 
+\bibitem{bworld5}
+AKHILESH GANTI.
+\newblock {Heston Model}.
+\newblock \url{https://www.investopedia.com/terms/h/heston-model.asp}, 2021.
+
 \bibitem{bwordl3}
 John.
 \newblock {Straddles, Butterflies, Iron Condors and More}.
@@ -20,6 +25,11 @@ John.
 \newblock
   \url{https://www.codearmo.com/python-tutorial/calculating-volatility-smile},
   2021.
+
+\bibitem{bwordl4}
+CORY MITCHELL.
+\newblock {Volatility Smile Definition and Uses}.
+\newblock \url{https://www.investopedia.com/terms/v/volatilitysmile.asp}, 2021.
 
 \bibitem{seth_2022}
 Shobhit Seth.
